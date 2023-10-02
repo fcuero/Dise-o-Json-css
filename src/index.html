@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Menú Lateral</title>
+    <!-- Agrega esto dentro del head del archivo HTML, después de la inclusión de CSS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $(".menu-options li a").on("click", function(event) {
+            event.preventDefault();
+            var target = $(this).attr("href");
+            $("html, body").animate({
+                scrollTop: $(target).offset().top
+            }, 800);
+        });
+    });
+</script>
+</head>
+<body>
+</div>
+  <div class="menu">
+   <div class="menu-header">Menú</div>
+    <ul class="menu-options">
+        <div><a href="https://es.wikipedia.org/wiki/Introducci%C3%B3n">Introducción</a></div><br>
+        <div><a href="https://concepto.de/explicacion/">Explicación</a></div><br>
+        <div><a href="https://www.bing.com/images/search?q=La+Biblia&form=RESTAB&first=1">Biblioteca</a></div><br>
+        <div><a href="https://github.com/">GITHUB</a></div><br>
+        <div><a href="http://localhost:8080/">Mi pagina</a></div><br>
+        <div><a href="https://dle.rae.es/contenido/ayuda">Comentarios</a></div><br>
+        <div><a href="https://support.google.com/?hl=es">Ayuda</a></div><br>
+        <div><a href="https://github.com/fcuero/Imagen/commit/ee7b194ffe407f22b177d156601f9f97027523e2#diff-0a537376074a82a007ab74cea0d790850d7b24f9021ae519956654ab44474b56">Imagen</a></div><br>
+        <div><a href="https://www.youtube.com/watch?v=OP-00EwLdiU&list=RDOP-00EwLdiU&start_radio=1">Video</a></div><br>
+    </ul>
+   </div><br><div class="linea"><p>introduccion</p></div><br>
+   <div class="fila"><li><a href="https://github.com/fcuero/Imagen/commit/ee7b194ffe407f22b177d156601f9f97027523e2#diff-0a537376074a82a007ab74cea0d790850d7b24f9021ae519956654ab44474b56">Actividad 1</a></li></div><br>
+   <div class="pila"><li><a href="https://www.w-techsas.com/proyecto-demo/Componentes/seleccion-multiple">Actividad 2</a></li></div><br>
+   <div class="fin">Explicacio</div>
+   <center>   
+   <div class="content">
+   </div>
+   </center>
+ 
+</body>
+</html>
